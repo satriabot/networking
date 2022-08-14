@@ -1,0 +1,243 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title>Cakupan Area | Riyad Network</title>
+	<meta content="Tentang Kami, Riyad Network Internet Provider Terpercaya" name="description">
+	<meta content="Riyad Network, Internet Provider, ISP, Banyuwangi, area Riyad Network" name="keywords">
+
+	<!-- Favicons -->
+	<link href="assets/img/favicon.png" rel="icon">
+	<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+	<!-- Vendor CSS Files -->
+	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<link href="assets/vendor/remixicon/remixicon.css.html" rel="stylesheet">
+	<link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+	<link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+	<!-- Template Main CSS File -->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="assets/custom.css" >
+
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+</head>
+
+<body>
+	<!-- ======= Header ======= -->
+	<header id="header" class="fixed-top ">
+		<div class="container d-flex">
+
+			<div class="logo mr-auto">
+								 <a href="index.html"><img src="assets/img/logo.png" alt="Riyad Network" class="img-fluid"></a>
+			</div>
+
+			<nav class="nav-menu d-none d-lg-block">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="drop-down"><a href="area.html">Perusahaan</a>
+						<ul>
+							<li><a href="tentang-kami.html">Tentang Kami</a></li>
+							<li><a href="hubungi-kami.html">Hubungi Kami</a></li>
+							<li><a href="mitra.html">Mitra</a></li>
+						</ul>
+					</li>
+					<li class="drop-down"><a href="area.html">Layanan</a>
+						<ul>
+							
+							<li class="drop-down"><a href="area.html#">Layanan Internet</a>
+								<ul>
+									<li><a href="layanan/internet-dedicated.html">Internet Dedicated</a></li>
+									<li><a href="layanan/internet-broadband.html">Internet Broadband</a></li>
+								</ul>
+							</li>
+							<li class="drop-down"><a href="area.html#">Layanan Hosting</a>
+								<ul>
+									<li><a href="layanan/shared-hosting.html">Shared hosting</a></li>
+									<li><a href="layanan/vps-hosting.html">VPS Hosting</a></li>
+								</ul>
+							</li>
+							<li><a href="layanan/professional-service.html">Layanan Professional Service</a></li>						</ul>
+					</li>
+					<li><a href="area.html">Cakupan Area</a></li>
+					<li><a href="https://forms.gle/ZC1dbX3ToiihjEdw6" target="_BLANK">Join Us</a></li>
+				</ul>
+			</nav><!-- .nav-menu -->
+
+			<div class="header-social-links">
+												<a href="https://www.facebook.com/riyadnetwork.id" class="facebook" target="_BLANK"><i class="icofont-facebook"></i></a>
+												<a href="https://www.instagram.com/riyadnetwork/" class="instagram" target="_BLANK"><i class="icofont-instagram"></i></a>
+							</div>
+
+		</div>
+	</header><!-- End Header -->
+	<main id="main">
+
+		<!-- ======= Breadcrumbs ======= -->
+		<section id="breadcrumbs" class="breadcrumbs">
+			<div class="container">
+				<ol>
+					<li><a href="index.html">Home</a></li>
+					<li>Cakupan Area</li>
+				</ol>
+				<h2>Cakupan Area</h2>
+			</div>
+		</section><!-- End Breadcrumbs -->
+
+		<!-- ======= Contact Section ======= -->
+		<section id="contact" class="contact section-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 d-flex align-items-stretch php-email-form" data-aos="fade-right">
+						<form class="php-email-form">
+							<div class="form-row">
+								<div class="form-group col-md-4">
+									<label for="kabupaten">Kabupaten / Kota</label>
+									<select class="form-control" id="kabupaten" name="kabupaten">
+										<option value="0">Pilih Kabupaten</option>
+																				<option value="3">BANYUWANGI</option>
+																			</select>
+								</div>
+								<div class="form-group col-md-4">
+									<label for="kecamatan">Kecamatan</label>
+									<select class="form-control" id="kecamatan" name="kecamatan">
+										<option value="0">Pilih Kecamatan</option>
+									</select>
+								</div>
+								<div class="form-group col-md-4">
+									<label for="desa">Desa / Kelurahan</label>
+									<select class="form-control" id="desa" name="desa">
+										<option value="0">Pilih Desa/Kelurahan</option>
+									</select>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-12 d-flex align-items-stretch php-email-form" data-aos="fade-right" id="lokasi">
+						
+					</div>
+				</div>
+			</div>
+		</section><!-- End Contact Section -->
+		<script>
+		$(function () {
+			$("#kabupaten").on('change', function(){
+			    var kab = $("#kabupaten").val();
+			    $.ajax({
+			        url : "https://riyadnetwork.id/kec",
+			        data : "kab=" + kab,
+			        success : function(data) {
+			          // jika data sukses diambil dari server, tampilkan di <select id=kota>
+			        	$("#kecamatan").html(data);
+			        }
+			    });
+			});
+			$("#kecamatan").on('change', function(){
+			    var kec = $("#kecamatan").val();
+			    $.ajax({
+			        url : "https://riyadnetwork.id/des",
+			        data : "kec=" + kec,
+			        success : function(data) {
+			          // jika data sukses diambil dari server, tampilkan di <select id=kota>
+			        	$("#desa").html(data);
+			        }
+			    });
+			});
+			$("#desa").on('change', function(){
+			    var des = $("#desa").val();
+			    $.ajax({
+			        url : "https://riyadnetwork.id/lok",
+			        data : "des=" + des,
+			        success : function(data) {
+			          // jika data sukses diambil dari server, tampilkan di <select id=kota>
+			        	$("#lokasi").html(data);
+			        }
+			    });
+			});
+		});
+		</script>
+	</main><!-- End #main -->
+
+	<!-- ======= Footer ======= -->
+	<footer id="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6">
+						<div class="footer-info">
+							<h3>Riyad Network</h3>
+							<p>
+							Jl. Jenderal Sudirman No.09, Krajan 1, Tegalsari, Kabupaten Banyuwangi, Jawa Timur 68485<br><br>
+							<strong>Phone:</strong> +628113781288<br>
+							<strong>Email:</strong> admin@riyadnetwork.id<br>
+							</p>
+							<div class="social-links mt-3">
+																								<a href="https://www.facebook.com/riyadnetwork.id" class="facebook" target="_BLANK"><i class="bx bxl-facebook"></i></a>
+																								<a href="https://www.instagram.com/riyadnetwork/" class="instagram" target="_BLANK"><i class="bx bxl-instagram"></i></a>
+															</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 footer-links">
+						<h4>Link</h4>
+						<ul>
+							<li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="tentang-kami.html">Tentang Kami</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="hubungi-kami.html">Hubungi Kami</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="mitra.html">Mitra</a></li>
+							<li><i class="bx bx-chevron-right"></i> <a href="area.html">Cakupan Area</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-md-6 footer-links">
+						<h4>Layanan</h4>
+						<ul>
+														<li><i class="bx bx-chevron-right"></i> <a href="layanan/internet-dedicated.html">Internet Dedicated</a></li>
+														<li><i class="bx bx-chevron-right"></i> <a href="layanan/internet-broadband.html">Internet Broadband</a></li>
+														<li><i class="bx bx-chevron-right"></i> <a href="layanan/shared-hosting.html">Shared hosting</a></li>
+														<li><i class="bx bx-chevron-right"></i> <a href="layanan/vps-hosting.html">VPS Hosting</a></li>
+														<li><i class="bx bx-chevron-right"></i> <a href="layanan/professional-service.html">Layanan Professional Service</a></li>
+													</ul>
+					</div>
+									</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="copyright">
+				&copy; Copyright <strong><span>Riyad Network</span></strong>. All Rights Reserved
+			</div>
+			<div class="credits">
+			<!-- All the links in the footer should remain intact. -->
+			<!-- You can delete the links only if you purchased the pro version. -->
+			<!-- Licensing information: https://bootstrapmade.com/license/ -->
+			<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/ -->
+			Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+			</div>
+		</div>
+	</footer><!-- End Footer -->
+
+	<a href="area.html#" class="back-to-top"><i class="bx bxs-up-arrow-alt"></i></a>
+
+	<!-- Vendor JS Files -->
+	
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+	<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+	<script src="assets/vendor/venobox/venobox.min.js"></script>
+	<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+	<script src="assets/vendor/aos/aos.js"></script>
+
+	<!-- Template Main JS File -->
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
